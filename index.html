@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./favicon-32x32.png" type="image/x-icon" />
+
+    <link rel="stylesheet" href="./css/main.min.css" />
+
+    <title>Namorado Ideal pra Jamilly</title>
+  </head>
+  <body>
+    <header class="container">
+      <h1>Como ser o Namorado Ideal Pra Jamilly</h1>
+    </header>
+
+    <section>
+      <div class="container">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="motivos">
+                <h2>1 - Demonstrar que ama ela</h2>
+                <p>
+                  Ela sempre pergunta se eu "ainda amo ela", então não pode
+                  esquecer de dizer o quanto eu amo ela, que é o amor da minha
+                  vida e como eu sou feliz com ela
+                </p>
+                <img src="photo-01.jpg" alt="" class="casal" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="motivos">
+                <h2>2 - Encher ela de carinho</h2>
+                <p>
+                  Se tem algo que ela gosta, é de carinho, quanto mais carinho
+                  dar pra ela, mais aquele sorriso lindo vai aparecer (Olha esse
+                  sorriso lindo !!!!)
+                </p>
+                <img src="sorriso-lindo.jpg" alt="" class="casal" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="motivos">
+                <h2>3 - Fazer as coisas juntinhos</h2>
+                <p>
+                  Ela adora fazer as coisas juntinhos, como tirar fotinhas de
+                  casal, levar ela pra comer um McDonalds, sair por shopping pra
+                  ela gastar todo o dinheiro dela
+                </p>
+                <img src="Jogando.jpg" alt="" class="casal" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="motivos">
+                <h2>4 - Elogiar ela</h2>
+                <p>
+                  Sempre elogiar muita essa mulher linda, maravilhosa, deusa e
+                  gostosa que ela é, afinal um mulherão desse merece todos os
+                  elogios do mundo (OLHA COMO É GATA ESSA MULHER !!!)
+                </p>
+                <img src="lindaaa.jpg" alt="" class="casal" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="motivos">
+                <h2>Já disse que ama ela??</h2>
+
+                <div class="btns">
+                  <button onclick="btnMessage('Continue para o próximo slide')">
+                    SIM !!!
+                  </button>
+                  <button
+                    onclick="btnMessage('Volte para o começo e preste atenção !!')"
+                  >
+                    NÃO 😞
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="motivos">
+                <h2>5 - Tirar fotinhos de casal</h2>
+                <p>
+                  Encher a galeria de fotinhos de casal apaixonados bem
+                  viadinhos, ela gosta disso e tem que renovar as fotos, afinal
+                  a única fotinho de casal é no Motel
+                </p>
+                <img
+                  src="Imagem do WhatsApp de 2022-12-17 à(s) 04.22.38.jpg"
+                  alt=""
+                  class="casal"
+                />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="motivos">
+                <h2>6 - Fazer uma supressa</h2>
+                <p>
+                  Sempre fazer alguma surpresa para ela, principalmente nos dias
+                  que ela estiver de TPM, levar um docinho, levar uma bobeira
+                </p>
+                <img src="./lingua.jpg" alt="" class="casal" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="motivos">
+                <h2>7 - Expressar seus sentimentos</h2>
+                <p>
+                  Ela nunca vai saber como você está, se ama ela, se está com
+                  algum problema, então expressa seus sentimentos, é uma das
+                  coisas que ela mais gosta no relacionamento
+                </p>
+                <img src="beijo-coberta.jpg" alt="" class="casal" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="motivos">
+                <h2>E por fim, o mais importante...</h2>
+                <p>
+                  Sempre mostrar pra ela o quanto sou apaixonado, louco,
+                  completamente pirado por essa garota que é a mulher da minha
+                  vida vulgo amor da minha vida todinha e é muito importante pra
+                  mim, e por ela sempre tudo vai valer a pena, não existe coisa
+                  mais bonita que o sorriso de felicidade dessa (PS: Escrevi
+                  isso com os olhos cheio de lágrimas)
+                </p>
+                <img src="jamilly-linda.jpg" alt="" class="casal" />
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        pagination: {
+          el: ".swiper-pagination",
+          type: "progressbar",
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      })
+    </script>
+
+    <script>
+      function btnMessage(message) {
+        alert(message)
+      }
+    </script>
+  </body>
+</html>
